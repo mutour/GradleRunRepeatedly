@@ -4,6 +4,9 @@
 # 前言
 最近处理脚本时, 需要用到重复某一个Task运行, 才做过程中发现gradle不支持task的重复运行. 经过内部运行分析发现通过调整Executer可以实现该功能
 
+# gradle版本支持
+该脚本时针对4.8.1进行处理的, gradle 6+貌似修改了内部逻辑,暂不支持  
+`distributionUrl=https\://services.gradle.org/distributions/gradle-4.8.1-bin.zip`
 
 # 以下是相关逻辑
 
