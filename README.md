@@ -8,6 +8,11 @@
 该脚本时针对4.8.1进行处理的, gradle 6+貌似修改了内部逻辑,暂不支持  
 `distributionUrl=https\://services.gradle.org/distributions/gradle-4.8.1-bin.zip`
 
+# gradle调试
+命令行运行`./gradlew :createTask -Dorg.gradle.daemon=false -Dorg.gradle.debug=true`
+IDEA Edit Configurations添加Remote. host: localhost, port: 5005, 然后Debug即可, 可以断点到gradle源码中, 部分gradle也可以断点
+
+
 # 以下是相关逻辑
 
 ```java
